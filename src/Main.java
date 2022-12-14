@@ -48,10 +48,10 @@ public class Main {
 
             s.executeUpdate(sql1);
 
-            s.executeUpdate("UPDATE student SET country = \"Italy\" where last_name = \"Boukoti\";");
-            s.executeUpdate("UPDATE student SET country = \"Italy\" where last_name = \"Vassarotti\";");
-            s.executeUpdate("UPDATE student SET country = \"Germany\" where last_name = \"De Fenzo\";");
-            s.executeUpdate("UPDATE student SET country = \"Germany\" where last_name = \"Mustata\";");
+            s.executeUpdate("UPDATE student SET country = \"Italy\" where student_id = 0;");
+            s.executeUpdate("UPDATE student SET country = \"Italy\" where student_id = 1;");
+            s.executeUpdate("UPDATE student SET country = \"Germany\" where student_id = 2;");
+            s.executeUpdate("UPDATE student SET country = \"Germany\" where student_id = 3;");
 
         } catch(SQLException e) {
             System.out.println(e.getMessage());
